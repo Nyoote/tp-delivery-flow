@@ -5,3 +5,4 @@
 - Commit 3
 
 - Commit avant conflit
+- Commit avant merge conflit
