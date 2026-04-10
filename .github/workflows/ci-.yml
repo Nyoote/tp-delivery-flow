@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  mock-job:
+    runs-on: self-hosted
+    steps:
+      - name: Create a directory
+        run: mkdir -p mock-output
+
+      - name: Hello World log
+        run: echo "Hello World!"
