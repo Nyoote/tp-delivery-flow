@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Create a directory
-        run: mkdir -p mock-output
+        run: mkdir -p /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output
 
       - name: Hello World log
         run: echo "Hello World!"
