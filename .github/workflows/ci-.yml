@@ -16,16 +16,16 @@ jobs:
       - name: Hello World log
         run: echo "Hello World!"
 
-    static-file:
-      runs-on: self-hosted
-      steps:
-        - name: Create a directory
-          run: mkdir -p /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output
+  static-file:
+    runs-on: self-hosted
+    steps:
+      - name: Create a directory
+        run: mkdir -p /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output
 
-        - name: Create a static file
-          run: |
-            echo "clé1=valeur1" > /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt
-            echo "clé2=valeur2" >> /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt
+      - name: Create a static file
+        run: |
+          echo "clé1=valeur1" > /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt
+          echo "clé2=valeur2" >> /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt
 
-        - name: Show file content
-          run: cat /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt        
+      - name: Show file content
+        run: cat /Users/faustine/Desktop/cours/efrei/devops/tp-delivery-flow/mock-output/config.txt        
