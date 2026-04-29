@@ -16,7 +16,7 @@ jobs:
       - name: Hello World log
         run: echo "Hello World!"
 
-jobs:
+job-static-file:
   mock-job:
     runs-on: self-hosted
     steps:
